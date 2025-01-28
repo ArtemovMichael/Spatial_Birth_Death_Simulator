@@ -17,3 +17,8 @@ SBDPP_sim/
 ├── README.md
 └── .gitignore
 ```
+
+```bash
+pip install -r requirements.txt
+python setup.py build_ext --inplace
+```

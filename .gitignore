@@ -1,2 +1,10 @@
 .clang-format
 .clang-tidy
+
+/build
+/.idea
+/venv
+*.pyd
+*.html
+/simulation/SpatialBirthDeath.cpython-313-x86_64-linux-gnu.so
+simulation/SpatialBirthDeathWrapper.cpp
