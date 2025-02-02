@@ -14,6 +14,7 @@ SBDPP_sim/
 │   └── SpatialBirthDeathWrapper.pyx
 ├── requirements.txt
 ├── setup.py
+├── clean.py
 ├── README.md
 └── .gitignore
 ```
@@ -21,4 +22,10 @@ SBDPP_sim/
 ```bash
 pip install -r requirements.txt
 python setup.py build_ext --inplace
+```
+
+
+```bash
+chmod +x clean.py
+./clean.py
 ```
