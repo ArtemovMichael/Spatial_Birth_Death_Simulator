@@ -18,6 +18,8 @@ def clean():
         
         "**/*.html",
         "**/*.cpp",
+
+        "**/__pycache__/",
     ]
     
     protected_files = [
