@@ -28,22 +28,22 @@ else:
 
 extensions = [
     Extension(
-        name="simulation.SpatialBirthDeath",
-        sources=[
+        name = "simulation.SpatialBirthDeath",
+        sources = [
             "simulation/SpatialBirthDeathWrapper.pyx",
             "src/SpatialBirthDeath.cpp"
         ],
-        language="c++",
-        include_dirs=[os.path.abspath("include")],
-        extra_compile_args=compile_args,
-        extra_link_args=link_args
+        language = "c++",
+        include_dirs = [os.path.abspath("include")],
+        extra_compile_args = compile_args,
+        extra_link_args = link_args
     )
 ]
 
 setup(
-    name="spatial_sim",
-    version="1.0",
-    description="Spatial birth-death point process simulator",
-    ext_modules=cythonize(extensions, annotate=True, compiler_directives={"language_level": "3"}),
-    packages=find_packages(),
+    name = "spatial_sim",
+    version = "1.0",
+    description = "Spatial birth-death point process simulator",
+    ext_modules = cythonize(extensions, annotate = True, compiler_directives={"language_level": "3"}),
+    packages = find_packages(),
 )
